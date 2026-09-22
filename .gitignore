@@ -4,5 +4,8 @@
 /.settings
 # maven
 /target
+# gradle
+/.gradle
+/build
 # Mac filesystem dust
 /.DS_Store
