@@ -1,10 +1,10 @@
 [versions]
 pluginVersion = "0.40"
-dynmapApi = "2.1"
-bukkit = "1.7.10-R0.1-SNAPSHOT"
-citizensApi = "2.0.20-SNAPSHOT"
+dynmapCoreApi = "3.8"
+spigotApi = "26.3-R0.1-SNAPSHOT"
+citizensApi = "2.0.44-SNAPSHOT"
 
 [libraries]
-dynmapApi = { module = "us.dynmap:dynmap-api", version.ref = "dynmapApi" }
-bukkit = { module = "org.bukkit:bukkit", version.ref = "bukkit" }
+dynmapCoreApi = { module = "us.dynmap:DynmapCoreAPI", version.ref = "dynmapCoreApi" }
+spigotApi = { module = "org.spigotmc:spigot-api", version.ref = "spigotApi" }
 citizensApi = { module = "net.citizensnpcs:citizensapi", version.ref = "citizensApi" }

@@ -25,7 +25,7 @@ import org.bukkit.event.server.PluginEnableEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
-import org.dynmap.DynmapAPI;
+import org.dynmap.DynmapCommonAPI;
 import org.dynmap.markers.Marker;
 import org.dynmap.markers.MarkerAPI;
 import org.dynmap.markers.MarkerIcon;
@@ -35,7 +35,7 @@ public class DynmapCitizens2Plugin extends JavaPlugin {
     private static Logger log;
 
     Plugin dynmap;
-    DynmapAPI api;
+    DynmapCommonAPI api;
     MarkerAPI markerapi;
     CitizensPlugin citizens;
     private MarkerIcon deficon;
@@ -163,7 +163,7 @@ public class DynmapCitizens2Plugin extends JavaPlugin {
             severe("Cannot find dynmap!");
             return;
         }
-        api = (DynmapAPI) dynmap; /* Get API */
+        api = (DynmapCommonAPI) dynmap; /* Get API */
         /* Get Citizens */
         Plugin p = pm.getPlugin("Citizens");
         if(p == null) {

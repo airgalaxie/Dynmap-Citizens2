@@ -7,13 +7,14 @@ version = libs.versions.pluginVersion.get()
 
 repositories {
     mavenLocal()
+    maven("https://hub.spigotmc.org/nexus/content/groups/public/")
     maven("https://repo.mikeprimm.com/")
     maven("https://maven.citizensnpcs.co/repo")
 }
 
 dependencies {
-    compileOnly(libs.dynmapApi)
-    implementation(libs.bukkit)
+    compileOnly(libs.dynmapCoreApi)
+    compileOnly(libs.spigotApi)
     implementation(libs.citizensApi)
 }
 
