@@ -1,5 +1,6 @@
 [versions]
-pluginVersion = "0.40"
+pluginVersion = "0.41"
+apiVersion = "26.3"
 dynmapCoreApi = "3.8"
 spigotApi = "26.3-R0.1-SNAPSHOT"
 citizensApi = "2.0.44-SNAPSHOT"

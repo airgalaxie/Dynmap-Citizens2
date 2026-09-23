@@ -26,6 +26,7 @@ java {
 layout.buildDirectory.set(layout.projectDirectory.dir("target"))
 
 val pluginVersion = version.toString()
+val apiVersion = libs.versions.apiVersion.get()
 
 tasks.jar {
     destinationDirectory.set(layout.projectDirectory.dir("target"))
@@ -33,7 +34,7 @@ tasks.jar {
 
 tasks.processResources {
     filesMatching("*.yml") {
-        expand("project" to mapOf("version" to pluginVersion))
+        expand("project" to mapOf("version" to pluginVersion, "apiVersion" to apiVersion))
     }
     filesMatching("*.txt") {
         expand("project" to mapOf("version" to pluginVersion))

@@ -1,6 +1,8 @@
 name: Dynmap-Citizens2
 main: us.dynmap.citizens2.DynmapCitizens2Plugin
 version: "${project.version}"
+api-version: '${project.apiVersion}'
 author: mikeprimm
+contributors: [AirGalaxie]
 depend: [ dynmap, Citizens ]
 
